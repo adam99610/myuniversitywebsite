@@ -2,17 +2,57 @@
     <html lang="en-GB">
         <head>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Adam's T-Shirt Shop</title>
             <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                figure {
+                    display: inline-block;
+                    margin-right: 10px;
+                    max-width: 1000px;
+                    margin: 20px auto;
+                    background-color: #fff;
+                    padding: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0.1)
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                figcaption {
+                    margin-top: 10px;
+                }
+
+                select {
+                    padding: 8px;
+                    font-size: 16;
+                }
+
+                button {
+                    padding: 10px;
+                    font-size: 16px;
+                    background-color: #4caf50;
+                    color: #fff
+                    border; 
+                    cursor: pointer;
+                }
+            </style>
     
         </head>
     <body style = "text-align: center;">
 
-        <span> | <a href="../index.html">About Us</a> | </span>
-        <span><a href="itemssold.html">Items Sold</a> | </span>
-        <span><a href="../ContactUs/ContactUs.html">Contact Us</a> | </span>
-        <span><a href="../recommendations/recommendations.html">Recommendations</a> | </span>
-        <span><a href="../multimedia/multi-media.html">Multi-Media</a> | </span>
+        <p>| <a href="../index.html">Main</a> | <a href="itemssold.html">Items Sold</a> | <a href="../ContactUs/ContactUs.html">Contact Us</a> | <a href="../recommendations/recommendations.html">Recommendations</a> | <a href="../multimedia/multi-media.html">Multi-Media</a> | </p>
 
         <header>
             <figure>
@@ -24,7 +64,60 @@
 
 
         <main>
-            
+            <h2>Our Products</h2>
+            <figure>
+                <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="256">
+
+                <figcaption>
+                    <label for="size">Select Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </figcaption>
+
+                <button onclick="changeSize()">Change Size</button>
+            </figure>
+
+            <figure>
+                <img src="../SiteAssets/IMG/GreenLadWear.png" alt="Green Man T-Shirt" height="256" width="256">
+
+                <figcaption>
+                    <label for="size">Select Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </figcaption>
+                <button onclick="changeSize()">Change Size</button>
+            </figure>
+
+                <figure>
+                    <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="256">
+    
+                    <figcaption>
+                        <label for="size">Select Size:</label>
+                        <select id="size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </figcaption>
+
+                <button onclick="changeSize()">Change Size</button>
+            </figure>
+
+            <script>
+                function changeSize() {
+                    var newSize = document.getElementById("size").value;
+                    alert("Size changed to: " + newSize);
+                }
+            </script>
         </main>
     </body>
 </html>
