@@ -1,172 +1,158 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+    <html lang="en-GB">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Adam's T-Shirt Shop</title>
+            <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="../SiteAssets/CSS/ItemsSold.css">
+            <!-- <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../SiteAssets/Scripts/shared.js" defer></script>
-    <title>Adam's T-Shirt Shop</title>
-    <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+                figure {
+                    display: inline-block;
+                    margin-right: 10px;
+                    max-width: 1000px;
+                    margin: 20px auto;
+                    background-color: #fff;
+                    padding: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0.1)
+                }
 
-        figure {
-            display: inline-block;
-            margin-right: 10px;
-            max-width: 1000px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0.1)
-        }
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+                figcaption {
+                    margin-top: 10px;
+                }
 
-        figcaption {
-            margin-top: 10px;
-        }
+                select {
+                    padding: 8px;
+                    font-size: 16;
+                }
 
-        select {
-            padding: 8px;
-            font-size: 16;
-        }
+                button {
+                    padding: 10px;
+                    font-size: 16px;
+                    background-color: #4caf50;
+                    color: #fff
+                    border; 
+                    cursor: pointer;
+                }
 
-        button {
-            padding: 10px;
-            font-size: 16px;
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
+                footer {
+                    margin-top: 20px;
+                }
 
-        footer {
-            margin-top: 20px;
-        }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ccc;
+                    padding: 8px 0;
+                }
+            </style> -->
+    
+        </head>
+    <body style = "text-align: center;">
 
-        li {
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #ccc;
-            padding: 8px 0;
-        }
-    </style>
+        <p>| <a href="../index.html">Main</a> | <a href="itemssold.html">Items Sold</a> | <a href="../ContactUs/ContactUs.html">Contact Us</a> | <a href="../recommendations/recommendations.html">Recommendations</a> | <a href="../multimedia/multi-media.html">Multi-Media</a> | </p>
 
-</head>
+        <header>
+            <figure>
+                <img src="../SiteAssets/IMG/adams_tees.png" height="256" width="256">
 
-<body style="text-align: center;">
-
-    <p>| <a href="../index.html">Main</a> | <a href="itemssold.html">Items Sold</a> | <a
-            href="../ContactUs/ContactUs.html">Contact Us</a> | <a
-            href="../recommendations/recommendations.html">Recommendations</a> | <a
-            href="../multimedia/multi-media.html">Multi-Media</a> | </p>
-
-    <header>
-        <figure>
-            <img src="../SiteAssets/IMG/adams_tees.png" height="256" width="256">
-
-        </figure>
-        <h1> Adam's T-Shirt Store </h1>
-    </header>
+            </figure>
+            <h1> Adam's T-Shirt Store </h1>
+        </header>
 
 
-    <main>
-        <h2>Our Products</h2>
-        <p>These are the following products that we have to offer,</p>
-        <p>you can select different sizes,</p>
-        <p>from Small to XL.</p>
-        <figure>
-            <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="330">
+        <main>
+            <h2>Our Products</h2>
+            <p>These are the following products that we have to offer,</p>
+            <p>you can select different sizes,</p>
+            <p>from Small to XL.</p>
+            <figure>
+                <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="330">
 
-            <figcaption>
-                <label for="size1">Select Size:</label>
-                <select id="size1">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xl">XL</option>
-                </select>
-            </figcaption>
+                <figcaption>
+                    <label for="size">Select Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </figcaption>
 
-            <button onclick="addToBasket('size1')">Add to Basket</button>
-        </figure>
+                <button onclick="addToBasket()">Add to Basket</button>
+            </figure>
 
-        <figure>
-            <img src="../SiteAssets/IMG/GreenLadWear.png" alt="Green Man T-Shirt" height="256" width="256">
+            <figure>
+                <img src="../SiteAssets/IMG/GreenLadWear.png" alt="Green Man T-Shirt" height="256" width="256">
 
-            <figcaption>
-                <label for="size2">Select Size:</label>
-                <select id="size2">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xl">XL</option>
-                </select>
-            </figcaption>
-            <button onclick="addToBasket('size2')">Add to Basket</button>
-        </figure>
+                <figcaption>
+                    <label for="size">Select Size:</label>
+                    <select id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </figcaption>
+                <button onclick="addToBasket()">Add to Basket</button>
+            </figure>
 
-        <figure>
-            <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="275">
+                <figure>
+                    <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="275">
+    
+                    <figcaption>
+                        <label for="size">Select Size:</label>
+                        <select id="size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </figcaption>
 
-            <figcaption>
-                <label for="size3">Select Size:</label>
-                <select id="size3">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="xl">XL</option>
-                </select>
-            </figcaption>
+                <button onclick="addToBasket()">Add to Basket</button>
+            </figure>
 
-            <button onclick="addToBasket('size3')">Add to Basket</button>
-        </figure>
+        </main>
+        <footer>
+                <h2>Basket</h2>
+                <ul id="basket-items"></ul>
+        </footer>
 
-    </main>
-    <footer>
-        <h2>Basket</h2>
-        <ul id="basket-items"></ul>
-    </footer>
+        
+        <script>
+            function addToBasket() {
+                var itemImage = document.querySelector('img').src;
+                var itemSize = document.getElementById("size").value;
 
-    <script>
-        function addToBasket(sizeId) {
-            var sizeSelect = document.getElementById(sizeId);
-            var selectedSize = sizeSelect.value;
+                var basketItems = document.getElementById("basket-items");
+                var ListItem = document.createElement("li");
+                listItem.innerHTML = `
+                    <img src="${itemImage}" alt="Basket Item">
+                    <span>Size: ${itemSize}</span>
+                 `;
 
-            var productFigure = event.target.closest('figure');
-            var itemImage = productFigure.querySelector('img').src;
-
-            var basketItems = document.getElementById("basket-items");
-
-            var listItem = document.createElement("li");
-            listItem.innerHTML = `
-                <img src="${itemImage}" alt="Basket Item">
-                Size: ${selectedSize}
-                <button onclick="removeFromBasket(this)">Remove</button>
-            `;
-            basketItems.appendChild(listItem);
-        }
-
-        function removeFromBasket(button) {
-            var listItem = button.closest('li');
-            listItem.remove();
-        }
-    </script>
-</body>
-
+                 basketItems.appendChild(listItem);
+            }
+        </script>
+    </body>
 </html>
