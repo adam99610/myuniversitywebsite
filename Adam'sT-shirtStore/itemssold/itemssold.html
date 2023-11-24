@@ -47,6 +47,22 @@
                     border; 
                     cursor: pointer;
                 }
+
+                footer {
+                    margin-top: 20px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ccc;
+                    padding: 8px 0;
+                }
             </style>
     
         </head>
@@ -65,8 +81,11 @@
 
         <main>
             <h2>Our Products</h2>
+            <p>These are the following products that we have to offer,</p>
+            <p>you can select different sizes,</p>
+            <p>from Small to XL.</p>
             <figure>
-                <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="256">
+                <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="330">
 
                 <figcaption>
                     <label for="size">Select Size:</label>
@@ -78,7 +97,7 @@
                     </select>
                 </figcaption>
 
-                <button onclick="changeSize()">Change Size</button>
+                <button onclick="addToBasket()">Add to Basket</button>
             </figure>
 
             <figure>
@@ -93,11 +112,11 @@
                         <option value="xl">XL</option>
                     </select>
                 </figcaption>
-                <button onclick="changeSize()">Change Size</button>
+                <button onclick="addToBasket()">Add to Basket</button>
             </figure>
 
                 <figure>
-                    <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="256">
+                    <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="275">
     
                     <figcaption>
                         <label for="size">Select Size:</label>
@@ -109,15 +128,30 @@
                         </select>
                     </figcaption>
 
-                <button onclick="changeSize()">Change Size</button>
+                <button onclick="addToBasket()">Add to Basket</button>
             </figure>
 
-            <script>
-                function changeSize() {
-                    var newSize = document.getElementById("size").value;
-                    alert("Size changed to: " + newSize);
-                }
-            </script>
         </main>
+        <footer>
+                <h2>Basket</h2>
+                <ul id="basket-items"></ul>
+        </footer>
+
+        
+        <script>
+            function addToBasket() {
+                var itemImage = document.querySelector('img').src;
+                var itemSize = document.getElementById("size").value;
+
+                var basketItems = document.getElementById("basket-items");
+                var ListItem = document.createElement("li");
+                listItem.innerHTML = `
+                    <img src="${itemImage}" alt="Basket Item">
+                    <span>Size: ${itemSize}</span>
+                 `;
+
+                 basketItems.appendChild(listItem);
+            }
+        </script>
     </body>
 </html>
