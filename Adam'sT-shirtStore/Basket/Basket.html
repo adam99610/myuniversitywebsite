@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../SiteAssets/Scripts/shared.js" defer></script>
         <title>Adam's T-Shirt Shop</title>
         <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
         <style>
@@ -65,22 +66,71 @@
         }
         </style>
     </head>
-    <header>
-        <figure>
-            <img src="../SiteAssets/IMG/adams_tees.png" height="256" width="256">
 
-        </figure>
-        <h1> Adam's T-Shirt Store </h1>
-    </header>
+
 
     <body style = "text-align: center;">
-        <main>
 
-        </main>
+        <header>
+            <figure>
+                <img src="../SiteAssets/IMG/adams_tees.png" height="256" width="256">
+            </figure>
+            <h1>Basket</h1>
+        </header>
+
+        <section>
+            <ul id="basket-items"></ul>
+        </section>
+
     </body>
 
     <footer>
         <h2>Basket</h2>
         <ul id="basket-items"></ul>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            displayBasketItems();
+
+            document.getElementById("clear-basket").addEventListener("click", function() {
+                clearBasket();
+            });
+        });
+
+        function displayBasketItems() {
+            var basketItems = JSON.parse(localStorage.getItem("basket")) || [];
+            var basketList = document.getElementById("basket-items");
+
+            basketList.innerHTML = "";
+
+            basketItems.forEach(function(item) {
+                var listItem = document.createElement("li");
+                listItem.innerHTML = `
+                    <span>${item.size}</span>
+                    <button onclick="removeFromBasket('${item.size}')">Remove</button>
+                `;
+                basketList.appendChild(listItem);
+            });
+        }
+
+        function removeFromBasket(size) {
+            var basketItems = JSON.parse(localStorage.getItem("basket")) || [];
+            basketItems = basketItems.filter(item => item.size !== size);
+            localStorage.setItem("basket", JSON.stringify(basketItems));
+
+            displayBasketItems();
+        }
+
+        function clearBasket() {
+            localStorage.removeItem("basket");
+            displayBasketItems();
+        }
+
+ 
+        function addItemFromOtherPage(itemSize) {
+            addToBasketFromOtherPage(itemSize);
+            displayBasketItems();
+        }
+    </script>
 </html>
