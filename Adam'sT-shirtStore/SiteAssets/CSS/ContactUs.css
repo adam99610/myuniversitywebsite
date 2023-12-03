@@ -1,10 +1,23 @@
-fieldset 
-{
-    margin:auto;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #eeeeee;
+html {
+    background-image: url("../IMG/background.png");
+    background-color: rgba(5, 5, 5, 0.259);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+body {
+    margin: auto;
+    margin-top: -15px;
+    padding: 0 130px;
+    position: relative;
+    max-width: 500px;
+    max-height: 1300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #35353571;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 
 figure {
@@ -12,11 +25,20 @@ figure {
     margin-right: 10px;
     max-width: 1000px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #ffffff00;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0.1)
+    /* box-shadow: 0 0 10px rgba(0, 0, 0.1) */
 }
-    
+
+fieldset
+{
+    margin:auto;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #eeeeee;
+}
+  
 legend {
 background-color: gray;
 color: white;
@@ -30,6 +52,67 @@ margin: 5px;
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: flex;
     margin: 0 auto;
+}
+
+h2 {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+h1 {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+p {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16;
+}
+
+.mainbutton {
+	background-color: rgba(54, 54, 54, 0.027);
+	border: none;
+	color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #ff0000;
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-align: center;
+	align-self: center;
+	border: 3px solid #aa2828;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+
+}
+
+.mainbutton:hover {
+	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
+     /* margin: 8px 10px 12px; */
+
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff
+    border; 
+    cursor: pointer;
 }
