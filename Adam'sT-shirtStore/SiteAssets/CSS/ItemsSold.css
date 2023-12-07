@@ -11,7 +11,7 @@ body {
     padding: 0 130px;
     position: relative;
     max-width: 1500px;
-    max-height: 1500px;
+    max-height: 3000px;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #35353571;
@@ -25,7 +25,7 @@ figure {
     max-width: 1000px;
     text-align: center;
     align-self: center;
-    margin: 20px auto;
+    margin: 1px auto;
     background-color: #ffffff00;
     padding: 20px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0.1) */
