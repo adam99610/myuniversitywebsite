@@ -13,8 +13,8 @@ body {
     position: relative;
     max-width: 500px;
     max-height: 1300px;
-    /* overflow-y: auto; */
-    /* overflow-x: hidden; */
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #35353571;
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -27,7 +27,6 @@ figure {
     margin: 20px auto;
     background-color: #ffffff00;
     padding: 20px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0.1) */
 }
 
 img {
@@ -58,6 +57,13 @@ p {
     color: transparent;
 }
 
+q {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 figcaption {
     margin-top: 10px;
 }
@@ -67,7 +73,8 @@ select {
     font-size: 16;
 }
 
-.mainbutton {
+
+button {
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
 	color: rgb(255, 255, 255);
@@ -80,22 +87,10 @@ select {
 	border: 3px solid #aa2828;
 	border-radius: 12px;
 	transition-duration: 0.4s;
-
 }
 
-.mainbutton:hover {
-	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
-     /* margin: 8px 10px 12px; */
-
-}
-
-button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: #fff
-    border; 
-    cursor: pointer;
+button:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
 }
 
 footer {

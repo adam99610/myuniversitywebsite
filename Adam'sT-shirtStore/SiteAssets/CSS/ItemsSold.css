@@ -28,7 +28,6 @@ figure {
     margin: 1px auto;
     background-color: #ffffff00;
     padding: 20px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0.1) */
 }
 fieldset
 {
@@ -76,7 +75,7 @@ select {
     font-size: 16;
 }
 
-.mainbutton {
+/* .mainbutton {
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
 	color: rgb(255, 255, 255);
@@ -94,11 +93,10 @@ select {
 
 .mainbutton:hover {
 	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
-     /* margin: 8px 10px 12px; */
 
-}
+} */
 
-.basketbutton {
+/* .basketbutton {
     position: relative;
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
@@ -148,7 +146,7 @@ select {
 	border-radius: 12px;
 	transition-duration: 0.4s;
     left: -220px;
-}
+} */
 
 figcaption {
     margin-top: 10px;
@@ -160,7 +158,6 @@ select {
 }
 
 button {
-    position: relative;
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
 	color: rgb(255, 255, 255);
@@ -173,6 +170,10 @@ button {
 	border: 3px solid #aa2828;
 	border-radius: 12px;
 	transition-duration: 0.4s;
+}
+
+button:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
 }
 
 footer {
