@@ -75,7 +75,7 @@ select {
     font-size: 16;
 }
 
-/* .mainbutton {
+#mainbutton {
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
 	color: rgb(255, 255, 255);
@@ -91,12 +91,12 @@ select {
 
 }
 
-.mainbutton:hover {
+#mainbutton:hover {
 	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
 
-} */
+}
 
-/* .basketbutton {
+#basketbutton {
     position: relative;
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
@@ -114,7 +114,7 @@ select {
 
 }
 
-.basketbutton2 {
+#basketbutton2 {
     position: relative;
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
@@ -131,7 +131,7 @@ select {
     left: -200px;
 }
 
-.basketbutton3 {
+#basketbutton3 {
     position: relative;
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
@@ -146,7 +146,7 @@ select {
 	border-radius: 12px;
 	transition-duration: 0.4s;
     left: -220px;
-} */
+}
 
 figcaption {
     margin-top: 10px;
