@@ -109,7 +109,11 @@ li {
     padding: 8px 0;
 }
 
-#mainbutton {
+#mainbutton1,
+#mainbutton2,
+#mainbutton3,
+#mainbutton4,
+#mainbutton5 {
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
 	color: rgb(255, 255, 255);
@@ -122,9 +126,12 @@ li {
 	border: 3px solid #aa2828;
 	border-radius: 12px;
 	transition-duration: 0.4s;
-
 }
 
-#mainbutton:hover {
+#mainbutton1:hover,
+#mainbutton2:hover,
+#mainbutton3:hover,
+#mainbutton4:hover,
+#mainbutton5:hover {
 	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
 }
