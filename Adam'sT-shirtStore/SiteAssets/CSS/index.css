@@ -108,3 +108,23 @@ li {
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
 }
+
+#mainbutton {
+	background-color: rgba(54, 54, 54, 0.027);
+	border: none;
+	color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #ff0000;
+	display: inline-block;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-align: center;
+	align-self: center;
+	border: 3px solid #aa2828;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+
+}
+
+#mainbutton:hover {
+	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
+}

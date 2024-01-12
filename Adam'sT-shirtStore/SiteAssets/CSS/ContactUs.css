@@ -109,7 +109,7 @@ select {
     font-size: 16;
 }
 
-/* .mainbutton {
+#mainbutton {
 	background-color: rgba(54, 54, 54, 0.027);
 	border: none;
 	color: rgb(255, 255, 255);
@@ -125,11 +125,9 @@ select {
 
 }
 
-.mainbutton:hover {
+#mainbutton:hover {
 	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
-     
-
-} */
+}
 
 button {
 	background-color: rgba(54, 54, 54, 0.027);
