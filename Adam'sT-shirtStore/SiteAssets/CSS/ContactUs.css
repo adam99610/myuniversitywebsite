@@ -157,3 +157,25 @@ select {
   #skip-to-content-link:focus {
     transform: translateY(0%);
   }
+
+@media only screen and (max-width: 600px) {
+    body {
+        text-align: left; /* Adjust alignment for small screens */
+    }
+
+    nav {
+        display: block; /* Stack navigation links vertically */
+    }
+
+    header figure {
+        margin: 10px auto; /* Center the logo on small screens */
+    }
+
+    main figure {
+        width: 100%; /* Make images take full width on small screens */
+    }
+
+    main select {
+        width: 100%; /* Make dropdowns take full width on small screens */
+    }
+}
