@@ -31,24 +31,67 @@
 
         <main>
             <article>
-                <h2>Our Recommendations</h2>
-                <p>Here are a few of out most polular designs.</p>
-                <figure>
-                    <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Shirt with dark design" height="256" width="330">
-                    <figcaption>Darsh T-Shirt</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../SiteAssets/IMG/GreenLadWear.png" alt="White Shirt with green design" height="256" width="256">
-                    <figcaption>Green man T-Shirt</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="../SiteAssets/IMG/PurSkull.png" alt="White Shirt with Purple design" height="256" width="275">
-                    <figcaption>Purskull T-Shirt</figcaption>
-                </figure>
-                
+                <h2>Customer Reccomendation's</h2>
+                <p>questions about our products.</p>>
             </article>
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Overall Experience:</legend>
+                        <p>How would you rate your overall shopping experience?</p>
+                        <label>
+                            <input type="radio" name="overall-experience" value="excellent"> Excellent
+                        </label>
+                        <label>
+                            <input type="radio" name="overall-experience" value="good"> Good
+                        </label>
+                        <label>
+                            <input type="radio" name="overall-experience" value="average"> Average
+                        </label>
+                        <label>
+                            <input type="radio" name="overall-experience" value="poor"> Poor
+                        </label>
+                        <meter min="0" max="4" value="0"></meter>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Website Navigation:</legend>
+                        <p>Was the website easy to navigate?</p>
+                        <label>
+                            <input type="radio" name="website-navigation" value="very easy"> Very Easy
+                        </label>
+                        <label>
+                            <input type="radio" name="website-navigation" value="easy"> Easy
+                        </label>
+                        <label>
+                            <input type="radio" name="website-navigation" value="neutral"> Neutral
+                        </label>
+                        <label>
+                            <input type="radio" name="website-navigation" value="difficult"> Difficult
+                        </label>
+                        <label>
+                            <input type="radio" name="website-navigation" value="very difficult"> Very Difficult
+                        </label>
+                        <meter min="0" max="5" value="0"></meter>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Recommendations:</legend>
+                        <p>Would you recommend this website to others? </p>
+                        <label>
+                            <input type="radio" name="recommendations" value="yes"> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="recommendations" value="no"> No
+                        </label>
+                        <meter min="0" max="2" value="0"></meter>
+                    </fieldset>
+                
+                
+                    <button type="submit">Submit</button>
+                </form>
+
+            </section>
         </main>
     </body>
 </html>

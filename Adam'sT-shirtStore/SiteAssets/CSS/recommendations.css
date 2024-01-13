@@ -11,8 +11,8 @@ body {
     margin-top: -15px;
     padding: 0 130px;
     position: relative;
-    max-width: 1200px;
-    max-height: 1300px;
+    max-width: 2000px;
+    max-height: 3000px;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #35353571;
@@ -20,15 +20,6 @@ body {
     border-radius: 20px;
 }
 
-figure {
-    display: inline-block;
-    margin-right: 10px;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: #ffffff00;
-    padding: 20px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0.1) */
-}
 
 h2 {
     background: linear-gradient(45deg, red, rgb(255, 255, 255));
@@ -61,12 +52,6 @@ select {
 }
 
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
 figcaption {
     margin-top: 10px;
@@ -119,4 +104,15 @@ li {
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     padding: 8px 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
 }
