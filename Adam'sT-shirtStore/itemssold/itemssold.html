@@ -1,117 +1,99 @@
 <!DOCTYPE html>
-    <html lang="en-GB">
-        <head>
-            <meta charset="UTF-8">
-            <script src="../SiteAssets/Scripts/shared.js" defer></script>
-            <title>Adam's T-Shirt Shop</title>
-            <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
-            <link rel="stylesheet" type="text/css" href="../SiteAssets/CSS/ItemsSold.css">
+<html lang="en-GB">
 
-            <nav>
-                <a href="../index.html"><button id="mainbutton1">Main</button></a>
-               <a href="../itemssold/itemssold.html"><button id="mainbutton2">Items Sold</button></a>
-               <a href="../ContactUs/ContactUs.html"><button id="mainbutton3">Contact Us</button></a>
-               <a href="../recommendations/recommendations.html"><button id="mainbutton4">Recommendations</button></a>
-               <a href="multi-media.html"><button id="mainbutton5">Multi-Media</button></a>
-           </nav>
+<head>
+    <meta charset="UTF-8">
+    <title>Adam's T-Shirt Shop</title>
+    <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/CSS/ItemsSold.css">
+
+
+
+</head>
+
+<body style="text-align: center;">
+  
+    <a id="skip-to-content-link" href="#itemssold">
+        Skip to content
+    </a>
+      
+    <nav>
+        <a href="../index.html"><button id="mainbutton1">Main</button></a>
+        <a href="itemssold.html"><button id="mainbutton2">Items Sold</button></a>
+        <a href="../ContactUs/ContactUs.html"><button id="mainbutton3">Contact Us</button></a>
+        <a href="../recommendations/recommendations.html"><button id="mainbutton4">Recommendations</button></a>
+        <a href="../multimedia/multi-media.html"><button id="mainbutton5">Multi-Media</button></a>
+    </nav>
     
-        </head>
-    <body style = "text-align: center;">
+
+    <header>
+        <figure>
+            <img src="../SiteAssets/IMG/adams_tees.png" height="256" width="256" alt="this is the default address for the logo">
+        </figure>
+        <h1> Adam's T-Shirt Store </h1>
+    </header>
+
+    <main>
 
 
 
-        <header>
-            <figure>
-                <img src="../SiteAssets/IMG/adams_tees.png" height="256" width="256" alt="this is the default address for the logo">
+        <h2>Our Products</h2>
+        <p>These are the following products that we have to offer,</p>
+        <p>you can select different sizes,</p>
+        <p>from Small to XL.</p>
+        <figure>
+            <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="330">
 
-            </figure>
-            <h1> Adam's T-Shirt Store </h1>
-        </header>
+            <figcaption>
+                <label for="darshsize">Select Size:</label>
+                <select id="darshsize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+            </figcaption>
+        </figure>
 
+        <button id="basketbutton" onclick="addToBasket('DarSh-Shirt.png')">Add to Basket</button>
 
-        <main>
-            <h2>Our Products</h2>
-            <p>These are the following products that we have to offer,</p>
-            <p>you can select different sizes,</p>
-            <p>from Small to XL.</p>
-            <figure>
-                <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="330">
+        <figure>
+            <img src="../SiteAssets/IMG/GreenLadWear.png" alt="Green Man T-Shirt" height="256" width="256">
 
-                <figcaption>
-                    <label for="darshsize">Select Size:</label>
-                    <select id="darshsize">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="xl">XL</option>
-                    </select>
-                </figcaption>
-                <br><br>
-            </figure>
-            
-            <button id="basketbutton" onclick="adddarshToBasket2()">Add to Basket</button> 
+            <figcaption>
+                <label for="greensize">Select Size:</label>
+                <select id="greensize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+            </figcaption>
+        </figure>
 
-            <figure>
-                <img src="../SiteAssets/IMG/GreenLadWear.png" alt="Green Man T-Shirt" height="256" width="256">
+        <button id="basketbutton2" onclick="addToBasket('GreenLadWear.png')">Add to Basket</button>
 
-                <figcaption>
-                    <label for="greensize">Select Size:</label>
-                    <select id="greensize">
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="xl">XL</option>
-                    </select>
-                </figcaption>
-                <br><br>
-                </figure>
-            
-            <button id="basketbutton2" onclick="addToBasketFromOtherPage()">Add to Basket</button>
-            
-                <figure>
-                    <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="275">
-    
-                    <figcaption>
-                        <label for="pursize">Select Size:</label>
-                        <select id="pursize">
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
-                            <option value="xl">XL</option>
-                        </select>
-                    </figcaption>
-                    <br><br>
-                </figure>
-            
-            <button id="basketbutton3" onclick="addToBasketFromOtherPage()">Add to Basket</button>
-            
-        </main>
+        <figure>
+            <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="275">
+
+            <figcaption>
+                <label for="pursize">Select Size:</label>
+                <select id="pursize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+            </figcaption>
+        </figure>
+
+        <button id="basketbutton3" onclick="addToBasket('PurSkull.png')">Add to Basket</button>
+
+    </main>
         <footer>
                 <h2>Basket</h2>
                 <ul id="basket-items"></ul>
         </footer>
 
-        
-        <script>
-            function addToBasket() {
-                var itemImage = document.querySelector('img').src;
-                var itemSize = document.getElementById("darshsize").value;
-        
-                var basketItems = document.getElementById("basket-items");
-                var listItem = document.createElement("li");
-                listItem.innerHTML = `
-                    <img src="${itemImage}" alt="Basket Item">
-                    <p>Size: ${itemSize}</p>
-                    <button onclick="removeFromBasket(this)">Remove</button>
-                `;
-        
-                basketItems.appendChild(listItem);
-            }
-        
-            function removeFromBasket(button) {
-                var listItem = button.closest('li');
-                listItem.remove();
-            }
-        </script>
     </body>
 </html>

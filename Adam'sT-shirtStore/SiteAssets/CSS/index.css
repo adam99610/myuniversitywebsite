@@ -87,6 +87,9 @@ button {
 	border: 3px solid #aa2828;
 	border-radius: 12px;
 	transition-duration: 0.4s;
+    position: relative;
+    top: 20px;
+    
 }
 
 button:hover {
@@ -126,6 +129,8 @@ li {
 	border: 3px solid #aa2828;
 	border-radius: 12px;
 	transition-duration: 0.4s;
+    position: relative;
+    top: 20px;
 }
 
 #mainbutton1:hover,
@@ -135,3 +140,23 @@ li {
 #mainbutton5:hover {
 	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
 }
+
+#skip-to-content-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  #skip-to-content-link {
+    background: #e77e23;
+    height: 50px;
+    left: 100%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  #skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
