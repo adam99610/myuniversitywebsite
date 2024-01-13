@@ -38,8 +38,8 @@
                 <img src="../SiteAssets/IMG/DarSh-Shirt.png" alt="Dark Pattern T-Shirt" height="256" width="330">
 
                 <figcaption>
-                    <label for="size">Select Size:</label>
-                    <select id="size">
+                    <label for="darshsize">Select Size:</label>
+                    <select id="darshsize">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
@@ -49,14 +49,14 @@
                 <br><br>
             </figure>
             
-            <button id="basketbutton" onclick="addToBasket()">Add to Basket</button>
+            <button id="basketbutton" onclick="adddarshToBasket2()">Add to Basket</button> 
 
             <figure>
                 <img src="../SiteAssets/IMG/GreenLadWear.png" alt="Green Man T-Shirt" height="256" width="256">
 
                 <figcaption>
-                    <label for="size1">Select Size:</label>
-                    <select id="size1">
+                    <label for="greensize">Select Size:</label>
+                    <select id="greensize">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
@@ -66,14 +66,14 @@
                 <br><br>
                 </figure>
             
-            <button id="basketbutton2" onclick="addToBasket()">Add to Basket</button>
+            <button id="basketbutton2" onclick="addToBasketFromOtherPage()">Add to Basket</button>
             
                 <figure>
                     <img src="../SiteAssets/IMG/PurSkull.png" alt="PurSkull T-Shirt" height="256" width="275">
     
                     <figcaption>
-                        <label for="size2">Select Size:</label>
-                        <select id="size2">
+                        <label for="pursize">Select Size:</label>
+                        <select id="pursize">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
                             <option value="large">Large</option>
@@ -83,7 +83,7 @@
                     <br><br>
                 </figure>
             
-            <button id="basketbutton3" onclick="addToBasket()">Add to Basket</button>
+            <button id="basketbutton3" onclick="addToBasketFromOtherPage()">Add to Basket</button>
             
         </main>
         <footer>
@@ -95,7 +95,7 @@
         <script>
             function addToBasket() {
                 var itemImage = document.querySelector('img').src;
-                var itemSize = document.getElementById("size").value;
+                var itemSize = document.getElementById("darshsize").value;
         
                 var basketItems = document.getElementById("basket-items");
                 var listItem = document.createElement("li");
