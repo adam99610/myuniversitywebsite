@@ -93,12 +93,12 @@ p {
     color: transparent;
 }
 
-q {
+q { /*what is this one for again? We don't seem to use it at all*/
     background: linear-gradient(45deg, red, rgb(255, 255, 255));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-}
+} 
 
 figcaption {
     margin-top: 10px;

@@ -90,6 +90,84 @@ select {
 #mainbutton5:hover {
 	 box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
 }
+
+#customer-rec {
+    text-align: center;
+    align-self: center;
+    margin: auto;
+}
+
+
+#surveyform textarea,
+#surveyform fieldset,
+#surveyform {
+    max-width: 400px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #471818a4;
+    /* backdrop-filter: blur(5px); */
+    border-radius: 20px;
+    /* display: inline-block; */
+
+    
+}
+
+#surveybutton {
+    background-color: rgba(54, 54, 54, 0.027);
+	border: none;
+	color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #ff0000;
+	display: inline-block;
+	font-size: 17px;
+	padding: 10px 60px;
+	text-align: center;
+	align-self: center;
+	border: 3px solid #aa2828;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+    position: relative;
+    bottom: 20px;
+}
+
+#surveysubmit {
+    background-color: rgba(54, 54, 54, 0.027);
+	border: none;
+	color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #ff0000;
+	display: inline-block;
+	font-size: 11px;
+	padding: 5px 20px;
+	text-align: center;
+	align-self: center;
+	border: 3px solid #aa2828;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+    position: relative;
+}
+
+#surveybutton:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.019), 0 6px 6px rgba(255, 255, 255, 0.023);
+}
+
+#surveyform legend {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#surveyform label {
+    background: linear-gradient(45deg, red, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
 footer {
     margin-top: 20px;
 }

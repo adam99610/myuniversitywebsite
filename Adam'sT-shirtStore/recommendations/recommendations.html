@@ -4,6 +4,7 @@
             
             <meta charset="UTF-8">
             <title>Adam's T-Shirt Shop</title>
+            <script src="../SiteAssets/Scripts/rec.js" defer></script>
             <link rel="icon" type="image/x-icon" href="../SiteAssets/IMG/favicon.ico">
             <link rel="stylesheet" type="text/css" href="../SiteAssets/CSS/recommendations.css">
 
@@ -31,11 +32,13 @@
 
         <main>
             <article>
-                <h2>Customer Reccomendation's</h2>
+                <h2>Customer Recommendations</h2>
                 <p>questions about our products.</p>>
             </article>
-            <section>
-                <form>
+            <button id="surveybutton" onclick="toggleSection()">Our Survey</button>
+
+            <section id="customer-rec" style>
+                <form id="surveyform">
                     <fieldset>
                         <legend>Overall Experience:</legend>
                         <p>How would you rate your overall shopping experience?</p>
@@ -88,7 +91,7 @@
                     </fieldset>
                 
                 
-                    <button type="submit">Submit</button>
+                    <button id="surveysubmit" type="submit">Submit</button>
                 </form>
 
             </section>
